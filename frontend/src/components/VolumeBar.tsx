@@ -16,7 +16,7 @@ export default function VolumeBar() {
             <button className="volume-button" aria-label="Decrease volume" onClick={() => changeVolume(-VOLUME_STEP)}>
                 <svg viewBox="0 0 26 20" width="26" height="20">
                     <path d={SPEAKER_PATH} />
-                    <path className="volume-sign" d="M 17 13 H 25" />
+                    <path className="volume-sign" d="M 17 10 H 25" />
                 </svg>
             </button>
             <div className="volume-track">
@@ -25,7 +25,7 @@ export default function VolumeBar() {
             <button className="volume-button" aria-label="Increase volume" onClick={() => changeVolume(VOLUME_STEP)}>
                 <svg viewBox="0 0 26 20" width="26" height="20">
                     <path d={SPEAKER_PATH} />
-                    <path className="volume-sign" d="M 17 13 H 25 M 21 9 V 17" />
+                    <path className="volume-sign" d="M 17 10 H 25 M 21 6 V 14" />
                 </svg>
             </button>
         </div>
